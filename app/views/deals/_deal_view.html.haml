@@ -1,0 +1,111 @@
+.deal_view
+  .row
+    .col-sm
+      %h2
+        %img.img-rounded{:src => "#{deal["hotelInfo"]["hotelImageUrl"]}"}
+        %label
+          = deal["hotelInfo"]["hotelName"]
+  .container
+    .row
+      .col-sm-4
+        %h4
+          Trip
+        %p
+          %label
+            Duration:
+            = deal["offerDateRange"]["lengthOfStay"]
+            Days
+        %p
+          %label
+            Start date:
+            = format_offer_date(deal["offerDateRange"]["travelStartDate"])
+        %p
+          %label
+            End date:
+            = format_offer_date(deal["offerDateRange"]["travelEndDate"])
+      .col-sm-4
+        %h4
+          Location
+        %p
+          %label
+            City:
+            = deal["destination"]["city"]
+        %p
+          %label
+            Province:
+            = deal["destination"]["province"]
+        %p
+          %label
+            Country:
+            = deal["destination"]["country"]
+      .col-sm-4
+        %h4
+          Rating
+        %p
+          %label
+            Star Rating:
+            = deal["hotelInfo"]["hotelStarRating"]
+            Stars
+        %p
+          %label
+            Guest Reviews:
+            = deal["hotelInfo"]["hotelGuestReviewRating"]
+            Stars
+    .row
+      .col-sm-4
+        %h4
+          Hotel
+        %p
+          %label
+            Name:
+            = deal["hotelInfo"]["hotelName"]
+        %p
+          %label
+            Place:
+            = deal["hotelInfo"]["hotelDestination"]
+        %p
+          %label
+            Address:
+            = deal["hotelInfo"]["hotelStreetAddress"]
+        %p
+          %label
+            Destination:
+            = deal["hotelInfo"]["hotelLongDestination"]
+      .col-sm-4
+        %h4
+          Price
+        %p
+          %label
+            Our Price:
+            = deal["hotelPricingInfo"]["averagePriceValue"]
+            = deal["hotelPricingInfo"]["currency"]
+            Per Night
+        %p
+          %label
+            Original Price:
+            = deal["hotelPricingInfo"]["originalPricePerNight"]
+            = deal["hotelPricingInfo"]["currency"]
+            Per Night
+        %p
+          %label
+            You save:
+            = deal["hotelPricingInfo"]["percentSavings"]
+            = "%"
+        %p
+          %label
+            Total Price:
+            = deal["hotelPricingInfo"]["totalPriceValue"]
+            = deal["hotelPricingInfo"]["currency"]
+      .col-sm-4
+        %h4
+          Links
+        %p
+          %label
+            %a{href: unescape_url("#{deal["hotelUrls"]["hotelInfositeUrl"]}")}
+              Hotel Info
+        %p
+          %label
+            %a{href: unescape_url("#{deal["hotelUrls"]["hotelSearchResultUrl"]}")}
+              Hotel Search Result
+
+%hr
