@@ -1,0 +1,9 @@
+.jumbotron
+  =render "filters_form"
+
+.container
+  - @deals.each do |deal|
+    = render "deal_view", deal: deal
+
+%hr
+%br
