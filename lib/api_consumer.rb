@@ -6,5 +6,6 @@ class ApiConsumer
   def self.get_all_deals(options= {})
     params = {query:  (options.blank? ? ApiConsumer::OPTIONS : ApiConsumer::OPTIONS.merge(options))}
     response = HTTParty.get(ApiConsumer::BASE_URI, params)
+    response.parsed_response
   end
 end
