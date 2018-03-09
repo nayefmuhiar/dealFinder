@@ -1,0 +1,47 @@
+= form_for :deal, url: "find" do |f|
+  .form-group
+    .row
+      .col-md-3
+        = f.label "Destination Name"
+        = f.text_field :destinationName, class: "form-control"
+
+        = f.label "Destination City"
+        = f.text_field :destinationCity, class: "form-control"
+
+        = f.label "Region IDs"
+        = f.text_field :regionIds, placeholder: "Comma separated region ids", class: "form-control"
+
+      .col-md-3
+        = f.label "Min Trip Start Date"
+        = f.text_field :minTripStartDate, placeholder: "YYYY-MM-DD", class: "form-control"
+      
+
+        = f.label "Max Trip Start Date"
+        = f.text_field :maxTripStartDate, placeholder: "YYYY-MM-DD", class: "form-control"
+
+        = f.label "Lengh Of Stay"
+        = f.text_field :lengthOfStay, class: "form-control"
+
+      .col-md-3
+        = f.label "Min Star Rating"
+        = f.text_field :minStarRating, class: "form-control"
+
+        = f.label "Max Star Rating"
+        = f.text_field :maxStarRating, class: "form-control"
+
+        = f.label "Min Total Rate"
+        = f.text_field :minTotalRate, class: "form-control"
+
+      .col-md-3
+        = f.label "Max Total Rate"
+        = f.text_field :maxTotalRate, class: "form-control"
+
+        = f.label "Min Quest Rating"
+        = f.text_field :minQuestRating, class: "form-control"
+
+        = f.label "Max Quest Rating"
+        = f.text_field :maxQuestRating, class: "form-control"
+        %br
+        = f.submit :Submit, class: "btn btn-primary mb-2"
+        %h6
+          Refresh page to reset filters
