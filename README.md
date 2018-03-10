@@ -8,7 +8,7 @@ This is a simple app with not many requirements to get up and running
 
 ### Prerequisites
 
-What things you need to install the software
+Things you need to install the software
 
 ```
 Ruby 2.5.0
@@ -70,12 +70,19 @@ Filteration params do not persist after submitting the form
 ## Built With
 
 * [Rails 5.1.5](http://weblog.rubyonrails.org/2018/2/14/Rails-5-1-5-has-been-released/) - The web framework used
-* [Bundler](https://bundler.io/ - Dependency Management
+* [Bundler](https://bundler.io/) - Dependency Management
+
+## Build tested on TravisCI
+https://travis-ci.org/nayefmuhiar/dealFinder
+
+## Deployed to Heroku
+https://deals-finder-nayefmuhiar.herokuapp.com/
+
 
 
 ## Authors
 
-* **Nayef Muhiar** - [NayefMuhiar](https://github.com/nayefmuhiar)
+* **[NayefMuhiar](https://github.com/nayefmuhiar)**
 
 ## Acknowledgments
 * Hat tip to anyone who's code was used
