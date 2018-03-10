@@ -63,8 +63,10 @@ rails test:integration
 
 Since there is no datbase in this app, running tests doesn't require anything more than phantomjs to be installed on your machine
 
+
 ## Known Issues
 Filteration params do not persist after submitting the form
+Could use more test scenarios
 
 
 ## Built With
