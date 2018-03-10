@@ -1,24 +1,81 @@
-# README
+# Deals Finder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is the outcome of a coding assignment
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+This is a simple app with not many requirements to get up and running
 
-* System dependencies
+### Prerequisites
 
-* Configuration
+What things you need to install the software
 
-* Database creation
+```
+Ruby 2.5.0
+```
 
-* Database initialization
+### Installing
 
-* How to run the test suite
+A step by step series of examples that tell you have to get a development env running
 
-* Services (job queues, cache servers, search engines, etc.)
+Say what the step will be
 
-* Deployment instructions
+```
+Fork the project
+```
 
-* ...
+```
+git pull origin master
+```
+
+```
+cd dealFinder
+```
+
+```
+install and run bundler gem
+```
+
+```
+run rails server
+```
+
+```
+go to localhost:3000 in your favorite browser
+```
+
+```
+Browse and search for deals
+```
+
+
+## Running the tests
+
+```
+rails test:system
+```
+
+```
+rails test:integration
+```
+
+### Test DB?
+
+Since there is no datbase in this app, running tests doesn't require anything more than phantomjs to be installed on your machine
+
+## Known Issues
+Filteration params do not persist after submitting the form
+
+
+## Built With
+
+* [Rails 5.1.5](http://weblog.rubyonrails.org/2018/2/14/Rails-5-1-5-has-been-released/) - The web framework used
+* [Bundler](https://bundler.io/ - Dependency Management
+
+
+## Authors
+
+* **Nayef Muhiar** - [NayefMuhiar](https://github.com/nayefmuhiar)
+
+## Acknowledgments
+* Hat tip to anyone who's code was used
