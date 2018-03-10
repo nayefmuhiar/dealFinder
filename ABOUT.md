@@ -12,7 +12,7 @@
 
   *HTTParty for the easier syntax, ran into an issue with base_uri and I did it manually as a workaround, could be an issue with rails 5 compatibility.
 
-  *I added a class named ApiConsumer to encapsulate the api consumption from one place in the app
+  *I added a class named ApiConsumer to encapsulate the api consumption to one place in the app
 
   *Added multiple partials to breakdown views into manageable chunks and to keep the code DRY and reusable
 
