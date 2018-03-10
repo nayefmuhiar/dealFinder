@@ -15,7 +15,7 @@ class DealsTest < ApplicationSystemTestCase
     click_on "Submit"
   
 
-    assert_selector "p", text: "City: Wadi Rum"
+    assert_selector "p", text: "Wadi Rum"
   end
 
   test "filtering deals by destination name" do
