@@ -87,4 +87,4 @@ https://deals-finder-nayefmuhiar.herokuapp.com/
 * **[NayefMuhiar](https://github.com/nayefmuhiar)**
 
 ## Acknowledgments
-* Hat tip to anyone who's code was used
+* Hat tip to anyone whose code was used
