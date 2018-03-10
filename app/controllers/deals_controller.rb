@@ -1,6 +1,5 @@
 class DealsController < ApplicationController
 
-
   def index
     result = ApiConsumer.get_deals
     set_result(result)
