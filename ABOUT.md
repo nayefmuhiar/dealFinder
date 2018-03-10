@@ -19,3 +19,8 @@
   *Used helper methods to reduce logic used within the view file itself
 
   *App builds and tests on Travis-CI
+
+## Challenges
+  *Working with an API without API docs, things are always vague to some degree
+  
+  *Having not done any development for a while really brought to my attention that this skill is one I need to practice more often.
