@@ -1,14 +1,21 @@
-Choice of Rails framework so frechen up my skills
-A better technical choice would have been Sinatra since I want to build an app that simply conusmes an API and shows results. Rails has many features I am not currently using
+## Intended functionality of the app:
+  A simple app that consumes an api endpoint and displays the most relevant information to the user
 
-Used Haml because of personal preference of the syntax over HTML, the perfroamnce loss is negligible since it is a test app
+## Thought process and main notes
+  *Choice of Rails framework to freshen up my skills. Although I have 2.5 years of experience in RoR, I haven't done any programming in the past 5 months or so.
+  
+  *A better technical choice would have been Sinatra since I want to build an app that simply conusmes an API and shows results. Rails has many features I am not currently using
 
-Loaded Bootstrap from CDN to ease the process
+  *Used Haml because of personal preference of the syntax over HTML, the perfroamnce loss is negligible since it is a test app
 
-HTTParty for the easier syntax
+  *Loaded Bootstrap from CDN to ease the process
 
-ApiConsumer class to encapsulate the api consumption from one place in the app
+  *HTTParty for the easier syntax, ran into an issue with base_uri and I did it manually as a workaround, could be an issue with rails 5 compatibility.
 
-Partials to breakdown views into manageable chunks and to keep the code DRY and reusable
+  *I added a class named ApiConsumer to encapsulate the api consumption from one place in the app
 
-Helper to reduce logic used within the view itself
+  *Added multiple partials to breakdown views into manageable chunks and to keep the code DRY and reusable
+
+  *Used helper methods to reduce logic used within the view file itself
+
+  *App builds and tests on Travis-CI
